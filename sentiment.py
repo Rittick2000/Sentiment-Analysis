@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import GetOldTweets3  as got
 from datetime import date
 def get_tweets():
-    term=imput()
+    term=input()
     today_date=date.today()
     tweetCriteria = got.manager.TweetCriteria().setQuerySearch(term) \
         .setSince("2020-01-01") \
